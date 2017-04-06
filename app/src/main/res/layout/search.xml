@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/nowlocation"
+    android:layout_width="wrap_content"
+    android:layout_height="46dp"
+    android:text="太原市"
+    android:gravity="center"
+    android:textSize="12sp"
+    android:paddingLeft="5dp"
+    android:drawableRight="@mipmap/home_drop_down"
+    android:drawablePadding="3px"/>
+    <TextView
+        android:id="@+id/cacel"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:text="取消"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:textColor="#FF11EDA0"
+        />
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@null"
+
+        android:layout_toLeftOf="@id/cacel"
+        android:hint="从哪出发"
+        android:textSize="12sp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/nowlocation"
+        android:layout_marginLeft="15dp"
+        />
+    <View
+        android:layout_below="@id/search"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#d9d9d9"/>
+
+</RelativeLayout>
